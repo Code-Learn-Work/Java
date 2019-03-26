@@ -33,4 +33,4 @@ If we send a value in the parameters of the function, its value doesn't change(p
     - StringBuilder is not synchronized
     - Performance : StringBuffer is good because it is mutable and no new objects will be created in the process.
 
-8. 
+8. Static vs Instance Variable :  A variable set as static means it is of the level of the class, whereas instance variable is one that is at the level of an object.
