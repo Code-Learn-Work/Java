@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 class MergeSort{
-    static void merge(int arr[],int mid,int SI,int EI){
+    static void merge(int arr[],int mid,int start,int end){
         
         // Length of 2 new Arrays 
-        int len1 = mid-SI+1;
-        int len2 = EI-mid;
+        int len1 = mid-start+1;
+        int len2 = end-mid;
         
         // 2 new Arrays
         int left[] = new int[len1];
@@ -13,12 +13,12 @@ class MergeSort{
         
         // Copy data into new Arrays
         for(int i=0;i<len1;i++)
-        left[i] = arr[i];
+        left[i] = arr[start+i];
         for(int i=0;i<len2;i++)
         right[i] = arr[mid+i+1];
         
         int i=0, j=0;
-        int k=1;
+        int k=start;
         while(i<len1 && j<len2){
             if(left[i]<=right[j]){
                 arr[k] = left[i];
