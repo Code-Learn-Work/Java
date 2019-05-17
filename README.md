@@ -1,5 +1,5 @@
 # Java
 This repository contains the following :
 - Basic Concepts
-- Data Structures
+- Data Structures and Algorithms
 - Interview Questions
